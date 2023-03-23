@@ -34,11 +34,9 @@ function GoogleBtn() {
   });
 
   return (
-    <div className="g-btn-comp">
+    <div className="g-btn-comp" onClick={handleClickG}>
       <img className="gLogo" src={gIcon}></img>
-      <span className="g-btn-text" onClick={handleClickG}>
-        Google Sign-in
-      </span>
+      <span className="g-btn-text">Google Sign-in</span>
     </div>
   );
 }

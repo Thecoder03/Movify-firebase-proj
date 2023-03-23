@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from "./components/Landing";
 import Login from "./components/Login";
 import Homepage from "./components/Homepage";
+import ForgotPassword from "./components/ForgotPassword";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/mainpage" element={<MainComp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/homepage" element={<Homepage />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
       </Routes>
     </div>
   );

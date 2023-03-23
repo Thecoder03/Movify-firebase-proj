@@ -27,6 +27,11 @@ function NavBar() {
     visibility: isVisible ? "visible" : "hidden",
   };
 
+  //Handle sending user to other page when clicking the logo
+  const handleLogoClick = () => {
+    window.location.href = "http://localhost:3000";
+  };
+
   //Handling setting variable for closing the modal
   const handleClose = () => setOpen(false);
 
@@ -87,7 +92,7 @@ function NavBar() {
         </div>
       </Rodal>
       <div className="logo">
-        <h1>Movifiy</h1>
+        <h1 onClick={handleLogoClick}>Movify</h1>
       </div>
       <div className="otherPages">
         <div
